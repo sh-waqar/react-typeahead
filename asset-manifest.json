@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-typeahead/static/css/main.96b8a6e7.chunk.css",
+    "main.js": "/react-typeahead/static/js/main.5c25fb26.chunk.js",
+    "main.js.map": "/react-typeahead/static/js/main.5c25fb26.chunk.js.map",
+    "runtime-main.js": "/react-typeahead/static/js/runtime-main.5b9b0b26.js",
+    "runtime-main.js.map": "/react-typeahead/static/js/runtime-main.5b9b0b26.js.map",
+    "static/css/2.764ccc25.chunk.css": "/react-typeahead/static/css/2.764ccc25.chunk.css",
+    "static/js/2.98a971b6.chunk.js": "/react-typeahead/static/js/2.98a971b6.chunk.js",
+    "static/js/2.98a971b6.chunk.js.map": "/react-typeahead/static/js/2.98a971b6.chunk.js.map",
+    "index.html": "/react-typeahead/index.html",
+    "precache-manifest.0b6b426aab9c8c434ccddcd67b9e0ca2.js": "/react-typeahead/precache-manifest.0b6b426aab9c8c434ccddcd67b9e0ca2.js",
+    "service-worker.js": "/react-typeahead/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/react-typeahead/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.96b8a6e7.chunk.css.map": "/react-typeahead/static/css/main.96b8a6e7.chunk.css.map",
+    "static/js/2.98a971b6.chunk.js.LICENSE": "/react-typeahead/static/js/2.98a971b6.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b9b0b26.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.98a971b6.chunk.js",
+    "static/css/main.96b8a6e7.chunk.css",
+    "static/js/main.5c25fb26.chunk.js"
+  ]
+}
