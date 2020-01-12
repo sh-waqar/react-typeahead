@@ -1,5 +1,6 @@
 import uniqueId from 'lodash/fp/uniqueId';
 import trim from 'lodash/fp/trim';
+import memoize from 'fast-memoize';
 
 export const initialState = {
   searchTerm: '',
@@ -153,16 +154,16 @@ function reducer(state, { type, payload }) {
   }
 }
 
-export const getMatchedItems = (list, searchTerm) => {
-  const trimedValue = trim(searchTerm);
+export const getMatchedItems = memoize(state => {
+  const trimedValue = trim(state.searchTerm);
 
   if (trimedValue === '') {
     return [];
   }
 
-  return list.filter(item =>
+  return state.list.filter(item =>
     item.value.toLowerCase().includes(trimedValue.toLowerCase())
   );
-};
+});
 
 export default reducer;

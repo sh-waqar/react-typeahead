@@ -44,7 +44,7 @@ const ListItem = styled.div`
 
 function Typeahead({ name, options }) {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const matches = getMatchedItems(state.list, state.searchTerm);
+  const matches = getMatchedItems(state);
 
   const listRef = useRef(null);
   const inputRef = useRef(null);
