@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-typeahead/precache-manifest.0b6b426aab9c8c434ccddcd67b9e0ca2.js"
+  "/react-typeahead/precache-manifest.f682f163e7a1815b4aaad81d1c9f75e9.js"
 );
 
 self.addEventListener('message', (event) => {
