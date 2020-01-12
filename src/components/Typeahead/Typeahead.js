@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useReducer } from 'react';
+import React, { useEffect, useRef, useReducer, useCallback } from 'react';
 import styled from '@emotion/styled';
 import compose from 'lodash/fp/compose';
 
@@ -146,6 +146,11 @@ function Typeahead({ name, options }) {
     dispatch(deactivateMouseHover());
   }
 
+  const memoizedHighlight = useCallback(
+    value => highlight(state.searchTerm, value),
+    [state]
+  );
+
   return (
     <Wrapper>
       <InputField
@@ -171,10 +176,7 @@ function Typeahead({ name, options }) {
               data-index={idx}
               isActive={state.activeIndex === idx}
               dangerouslySetInnerHTML={{
-                __html: compose(
-                  sanitize,
-                  highlight(state.searchTerm)
-                )(item.value)
+                __html: compose(sanitize, memoizedHighlight)(item.value)
               }}
             />
           ))}
